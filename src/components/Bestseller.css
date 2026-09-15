@@ -1,0 +1,159 @@
+.bestseller-section {
+      width: 100%;
+      padding: 80px 0 90px;
+      background: #fff;
+      overflow: hidden;
+    }
+    
+    .bestseller-header {
+      width: 90%;
+      max-width: 1400px;
+      margin: 0 auto 35px;
+    }
+    
+    .bestseller-label {
+      display: flex;
+      margin-bottom: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #e85b87;
+      justify-content: center;
+      text-align: center;
+    }
+    
+    .bestseller-header h2 {
+      margin: 0;
+      font-size: 55px;
+      line-height: 1.15;
+      font-weight: 700;
+      color: #172b63;
+      justify-content: center;
+      text-align: center;
+    }
+    
+    .bestseller-header h2 span {
+      color: #e85b87;
+      font-size: 30px;
+    }
+    
+    .bestseller-header p {
+      margin: 12px 0 0;
+      font-size: 16px;
+      color: #626b80;
+      justify-content: center;
+      text-align: center;
+    }
+    
+    /* PRODUCT SCROLLER */
+    
+    .bestseller-slider {
+      width: 90%;
+      max-width: 1400px;
+      margin: 0 auto;
+    
+      display: flex;
+      gap: 22px;
+    
+      overflow-x: auto;
+      overflow-y: hidden;
+    
+      scroll-behavior: smooth;
+    
+      scrollbar-width: none;
+    }
+    
+    .bestseller-slider::-webkit-scrollbar {
+      display: none;
+    }
+    
+    /* DESKTOP */
+    
+    .bestseller-slide {
+      flex: 0 0 calc((100% - 66px) / 4);
+      min-width: 0;
+    }
+    
+    /* BUTTON */
+    
+    .bestseller-button-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 45px;
+    }
+    
+    .bestseller-view-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+    
+      padding: 14px 28px;
+    
+      background: #f05d8b;
+      color: #fff;
+    
+      border-radius: 50px;
+    
+      text-decoration: none;
+    
+      font-size: 15px;
+      font-weight: 600;
+    
+      transition: all 0.25s ease;
+    }
+    
+    .bestseller-view-button span {
+      font-size: 20px;
+      line-height: 1;
+    }
+    
+    .bestseller-view-button:hover {
+      transform: translateY(-2px);
+      background: #e64d7d;
+    }
+    
+    /* MOBILE */
+    
+    @media (max-width: 768px) {
+    
+      .bestseller-section {
+        padding: 55px 0 65px;
+      }
+    
+      .bestseller-header {
+        width: 90%;
+        margin-bottom: 25px;
+      }
+    
+      .bestseller-label {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+      }
+    
+      .bestseller-header h2 {
+        font-size: 30px;
+      }
+    
+      .bestseller-header p {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    
+      .bestseller-slider {
+        width: 90%;
+        gap: 14px;
+      }
+    
+      .bestseller-slide {
+        flex: 0 0 calc((100% - 14px) / 2);
+      }
+    
+      .bestseller-button-wrapper {
+        margin-top: 30px;
+      }
+    
+      .bestseller-view-button {
+        padding: 12px 23px;
+        font-size: 14px;
+      }
+    }

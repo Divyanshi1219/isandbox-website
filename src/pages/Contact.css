@@ -1,0 +1,1169 @@
+/* =========================================================
+   iSANDBOX CONTACT PAGE
+========================================================= */
+
+.contact-page {
+      position: relative;
+      width: 100%;
+      min-height: calc(100vh - 80px);
+    
+      overflow: hidden;
+    
+      background: #ffffff;
+    
+      color: #18345b;
+    
+      font-family: "Raleway", sans-serif;
+    
+      padding: 55px 5% 70px;
+    }
+    
+    
+    /* =========================================================
+       BACKGROUND SHAPES
+    ========================================================= */
+    
+    .contact-shape {
+      position: absolute;
+    
+      pointer-events: none;
+    
+      z-index: 0;
+    }
+    
+    .contact-shape-left {
+      width: 480px;
+      height: 480px;
+    
+      left: -310px;
+      bottom: -300px;
+    
+      border-radius: 50%;
+    
+      background: #dff3fb;
+    }
+    
+    .contact-shape-right {
+      width: 600px;
+      height: 520px;
+    
+      right: -330px;
+      top: 20px;
+    
+      border-radius: 52% 48% 55% 45%;
+    
+      background: #dff3fb;
+    
+      transform: rotate(-12deg);
+    }
+    
+    
+    /* =========================================================
+       DECORATIVE SPARKS
+    ========================================================= */
+    
+    .contact-spark {
+      position: absolute;
+    
+      color: #2589d8;
+    
+      z-index: 1;
+    
+      pointer-events: none;
+    }
+    
+    .spark-1 {
+      left: 3%;
+      top: 145px;
+    
+      font-size: 42px;
+    }
+    
+    .spark-2 {
+      right: 4%;
+      bottom: 130px;
+    
+      font-size: 35px;
+    }
+    
+    .spark-3 {
+      left: 48%;
+      bottom: 40px;
+    
+      font-size: 25px;
+    
+      opacity: 0.5;
+    }
+    
+    
+    /* =========================================================
+       MAIN LAYOUT
+    ========================================================= */
+    
+    .contact-wrapper {
+      position: relative;
+    
+      z-index: 2;
+    
+      width: min(1450px, 100%);
+    
+      margin: 0 auto;
+    
+      display: grid;
+    
+      grid-template-columns:
+        minmax(270px, 0.75fr)
+        minmax(520px, 1.35fr)
+        minmax(340px, 0.85fr);
+    
+      align-items: center;
+    
+      gap: 55px;
+    }
+    
+    
+    /* =========================================================
+       LEFT SIDE
+    ========================================================= */
+    
+    .contact-left {
+      position: relative;
+    
+      z-index: 4;
+    }
+    
+    
+    /* =========================================================
+       TITLE
+    ========================================================= */
+    
+    .contact-title {
+      position: relative;
+    
+      display: inline-block;
+    }
+    
+    .contact-title h1 {
+      margin: 0;
+    
+      font-size: clamp(58px, 5.5vw, 86px);
+    
+      line-height: 0.88;
+    
+      letter-spacing: -4px;
+    
+      font-weight: 800;
+    
+      color: #18345b;
+    }
+    
+    .contact-title h1 span {
+      color: rgb(36, 138, 216);
+    }
+    
+    
+    /* little hand-drawn lines */
+    
+    .title-lines {
+      position: absolute;
+    
+      right: -65px;
+      top: 25px;
+    
+      width: 48px;
+      height: 55px;
+    
+      transform: rotate(-12deg);
+    }
+    
+    .title-lines span {
+      position: absolute;
+    
+      display: block;
+    
+      height: 4px;
+    
+      border-radius: 5px;
+    
+      background: #18345b;
+    }
+    
+    .title-lines span:nth-child(1) {
+      width: 35px;
+    
+      top: 5px;
+      left: 8px;
+    
+      transform: rotate(-35deg);
+    }
+    
+    .title-lines span:nth-child(2) {
+      width: 48px;
+    
+      top: 23px;
+      left: 0;
+    
+      transform: rotate(-12deg);
+    }
+    
+    .title-lines span:nth-child(3) {
+      width: 28px;
+    
+      top: 42px;
+      left: 10px;
+    
+      transform: rotate(20deg);
+    }
+    
+    
+    /* =========================================================
+       INTRO
+    ========================================================= */
+    
+    .contact-intro {
+      margin: 25px 0 38px;
+    
+      color: #385b7d;
+    
+      font-size: 17px;
+    
+      line-height: 1.6;
+    
+      font-weight: 500;
+    }
+    
+    
+    /* =========================================================
+       CONTACT DETAILS
+    ========================================================= */
+    
+    .contact-info-list {
+      display: flex;
+    
+      flex-direction: column;
+    
+      gap: 22px;
+    }
+    
+    .contact-info-item {
+      display: flex;
+    
+      align-items: center;
+    
+      gap: 14px;
+    
+      text-decoration: none;
+    
+      color: inherit;
+    }
+    
+    .contact-icon {
+      width: 48px;
+      height: 48px;
+    
+      flex: 0 0 48px;
+    
+      display: flex;
+    
+      align-items: center;
+      justify-content: center;
+    
+      border-radius: 50%;
+    
+      background: #d9f0fb;
+    
+      color: #1684d4;
+    
+      transition: all 0.25s ease;
+    }
+    
+    .contact-info-item:hover .contact-icon {
+      background: #2589d8;
+    
+      color: white;
+    
+      transform: translateY(-3px);
+    }
+    
+    .contact-info-item h3 {
+      margin: 0 0 4px;
+    
+      color: #18345b;
+    
+      font-size: 14px;
+    
+      font-weight: 800;
+    }
+    
+    .contact-info-item p {
+      margin: 0;
+    
+      color: #55728d;
+    
+      font-size: 12px;
+    
+      line-height: 1.5;
+    }
+    
+    
+    /* =========================================================
+       FORM
+    ========================================================= */
+    
+    .contact-form-wrapper {
+      position: relative;
+    
+      z-index: 5;
+    }
+    
+    .contact-form-card {
+      width: 100%;
+    
+      padding: 42px 45px 45px;
+    
+      background: rgba(255, 255, 255, 0.96);
+    
+      border: 1px solid #e7eef4;
+    
+      border-radius: 28px;
+    
+      box-shadow:
+        0 22px 60px rgba(24, 52, 91, 0.10);
+    }
+    
+    
+    /* form heading */
+    
+    .form-top {
+      margin-bottom: 27px;
+    }
+    
+    .form-top h2 {
+      margin: 0 0 7px;
+    
+      color: #18345b;
+    
+      font-size: 27px;
+    
+      font-weight: 800;
+    
+      letter-spacing: -0.5px;
+    }
+    
+    .form-top p {
+      margin: 0;
+    
+      color: #70849a;
+    
+      font-size: 13px;
+    
+      line-height: 1.5;
+    }
+    
+    
+    /* =========================================================
+       FORM FIELDS
+    ========================================================= */
+    
+    .form-two-columns {
+      display: grid;
+    
+      grid-template-columns: 1fr 1fr;
+    
+      gap: 18px;
+    }
+    
+    .form-field {
+      display: flex;
+    
+      flex-direction: column;
+    
+      margin-bottom: 19px;
+    }
+    
+    .form-field label {
+      margin-bottom: 8px;
+    
+      color: #284665;
+    
+      font-size: 13px;
+    
+      font-weight: 800;
+    }
+    
+    .form-field label span {
+      color: #2589d8;
+    }
+    
+    .form-field input,
+    .form-field select,
+    .form-field textarea {
+      width: 100%;
+    
+      box-sizing: border-box;
+    
+      border: 1px solid #d7e2eb;
+    
+      background: #ffffff;
+    
+      color: #18345b;
+    
+      border-radius: 10px;
+    
+      outline: none;
+    
+      font-family: inherit;
+    
+      font-size: 13px;
+    
+      transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+    
+    .form-field input,
+    .form-field select {
+      height: 50px;
+    
+      padding: 0 15px;
+    }
+    
+    .form-field textarea {
+      min-height: 125px;
+    
+      padding: 14px 15px;
+    
+      resize: vertical;
+    }
+    
+    .form-field input::placeholder,
+    .form-field textarea::placeholder {
+      color: #a6b4c2;
+    }
+    
+    .form-field input:focus,
+    .form-field select:focus,
+    .form-field textarea:focus {
+      border-color: #2589d8;
+    
+      box-shadow:
+        0 0 0 3px rgba(37, 137, 216, 0.10);
+    }
+    
+    
+    /* =========================================================
+       BUTTON
+    ========================================================= */
+    
+    .contact-submit-button {
+      width: 100%;
+    
+      height: 54px;
+    
+      border: 0;
+    
+      border-radius: 10px;
+    
+      background: #2589d8;
+    
+      color: #ffffff;
+    
+      display: flex;
+    
+      align-items: center;
+    
+      justify-content: center;
+    
+      gap: 10px;
+    
+      font-family: inherit;
+    
+      font-size: 14px;
+    
+      font-weight: 800;
+    
+      cursor: pointer;
+    
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+    }
+    
+    .contact-submit-button:hover {
+      background: #1677c1;
+    
+      transform: translateY(-2px);
+    
+      box-shadow:
+        0 10px 25px rgba(37, 137, 216, 0.25);
+    }
+    
+    
+    /* =========================================================
+       RIGHT ARTWORK
+    ========================================================= */
+    
+    .contact-art {
+      position: relative;
+    
+      height: 535px;
+    
+      z-index: 3;
+    }
+    
+    
+    /* =========================================================
+       ORGANIC BLUE BACKGROUND
+    ========================================================= */
+    
+    .art-blob {
+      position: absolute;
+    
+      width: 500px;
+      height: 430px;
+    
+      right: -120px;
+      top: 40px;
+    
+      background: #d6effa;
+    
+      border-radius:
+        55% 45% 60% 40% /
+        45% 55% 45% 55%;
+    
+      transform: rotate(-7deg);
+    }
+    
+    
+    /* =========================================================
+       MESSAGE
+    ========================================================= */
+    
+    .art-message {
+      position: absolute;
+    
+      right: 35px;
+      top: 80px;
+    
+      z-index: 8;
+    
+      display: flex;
+    
+      flex-direction: column;
+    
+      color: #18345b;
+    
+      font-size: 25px;
+    
+      line-height: 1.02;
+    
+      font-weight: 800;
+    }
+    
+    .art-message .blue-text {
+      color: #2589d8;
+    }
+    
+    .art-heart {
+      margin-top: 12px;
+    
+      color: #18345b;
+    
+      font-size: 38px;
+    
+      line-height: 1;
+    }
+    
+    
+    /* =========================================================
+       LAMP
+    ========================================================= */
+    
+    .art-lamp {
+      position: absolute;
+    
+      left: 55px;
+      top: 85px;
+    
+      width: 180px;
+      height: 260px;
+    
+      z-index: 7;
+    }
+    
+    .lamp-top {
+      position: absolute;
+    
+      width: 115px;
+      height: 68px;
+    
+      left: 15px;
+      top: 0;
+    
+      border-radius: 70px 70px 25px 25px;
+    
+      background: #2589d8;
+    
+      transform: rotate(-20deg);
+    
+      box-shadow:
+        inset -9px -9px 0 rgba(0, 0, 0, 0.08);
+    }
+    
+    .lamp-glow {
+      position: absolute;
+    
+      width: 54px;
+      height: 34px;
+    
+      left: 31px;
+      bottom: 8px;
+    
+      border-radius: 50%;
+    
+      background: #ffd45b;
+    }
+    
+    .lamp-neck {
+      position: absolute;
+    
+      width: 14px;
+      height: 145px;
+    
+      left: 82px;
+      top: 52px;
+    
+      border-radius: 20px;
+    
+      background: #2589d8;
+    
+      transform: rotate(-10deg);
+    }
+    
+    .lamp-foot {
+      position: absolute;
+    
+      width: 110px;
+      height: 20px;
+    
+      left: 43px;
+      bottom: 25px;
+    
+      border-radius: 50%;
+    
+      background: #2589d8;
+    }
+    
+    
+    /* =========================================================
+       PENCIL CUP
+    ========================================================= */
+    
+    .art-pencil-cup {
+      position: absolute;
+    
+      left: 50px;
+      bottom: 75px;
+    
+      width: 105px;
+      height: 95px;
+    
+      background: white;
+    
+      border-radius: 12px 12px 20px 20px;
+    
+      z-index: 9;
+    
+      box-shadow:
+        0 15px 30px rgba(24, 52, 91, 0.10);
+    }
+    
+    .pencil {
+      position: absolute;
+    
+      width: 12px;
+      height: 100px;
+    
+      top: -62px;
+    
+      border-radius: 7px;
+    
+      transform-origin: bottom;
+    }
+    
+    .pencil-1 {
+      left: 20px;
+    
+      background: #f58db5;
+    
+      transform: rotate(-12deg);
+    }
+    
+    .pencil-2 {
+      left: 47px;
+    
+      background: #ffd45b;
+    
+      transform: rotate(2deg);
+    }
+    
+    .pencil-3 {
+      left: 72px;
+    
+      background: #55bce8;
+    
+      transform: rotate(12deg);
+    }
+    
+    .cup-face {
+      position: absolute;
+    
+      top: 34px;
+    
+      width: 100%;
+    
+      text-align: center;
+    
+      color: #18345b;
+    
+      font-size: 14px;
+    }
+    
+    .cup-face span {
+      margin: 0 8px;
+    }
+    
+    .cup-face b {
+      display: block;
+    
+      margin-top: 2px;
+    
+      font-size: 22px;
+    
+      font-weight: 400;
+    }
+    
+    
+    /* =========================================================
+       BLOCKS
+    ========================================================= */
+    
+    .art-blocks {
+      position: absolute;
+    
+      left: 135px;
+      bottom: 42px;
+    
+      width: 210px;
+      height: 200px;
+    
+      z-index: 7;
+    }
+    
+    .art-block {
+      position: absolute;
+    
+      display: flex;
+    
+      align-items: center;
+    
+      justify-content: center;
+    
+      border-radius: 9px;
+    
+      color: #18345b;
+    
+      font-size: 16px;
+    
+      font-weight: 800;
+    
+      box-shadow:
+        0 10px 20px rgba(24, 52, 91, 0.10);
+    }
+    
+    .block-yellow {
+      width: 135px;
+      height: 70px;
+    
+      left: 45px;
+      bottom: 65px;
+    
+      background: #ffd45b;
+    
+      transform: rotate(-2deg);
+    }
+    
+    .block-pink {
+      width: 110px;
+      height: 65px;
+    
+      left: 10px;
+      bottom: 105px;
+    
+      background: #f58db5;
+    
+      transform: rotate(-5deg);
+    }
+    
+    .block-blue {
+      width: 125px;
+      height: 65px;
+    
+      left: 65px;
+      bottom: 25px;
+    
+      background: #55bce8;
+    
+      transform: rotate(2deg);
+    }
+    
+    
+    /* =========================================================
+       RAINBOW
+    ========================================================= */
+    
+    .art-rainbow {
+      position: absolute;
+    
+      right: -10px;
+      bottom: 25px;
+    
+      width: 205px;
+      height: 145px;
+    
+      overflow: hidden;
+    
+      z-index: 8;
+    }
+    
+    .art-rainbow > div {
+      position: absolute;
+    
+      border-radius: 150px 150px 0 0;
+    
+      border-bottom: 0 solid transparent;
+    
+      border-style: solid;
+    
+      border-bottom: none;
+    }
+    
+    .rainbow-pink {
+      width: 190px;
+      height: 140px;
+    
+      left: 5px;
+      top: 15px;
+    
+      border-width: 20px;
+    
+      border-color: #f58db5;
+    }
+    
+    .rainbow-blue {
+      width: 140px;
+      height: 100px;
+    
+      left: 30px;
+      top: 55px;
+    
+      border-width: 18px;
+    
+      border-color: #55bce8;
+    }
+    
+    .rainbow-yellow {
+      width: 90px;
+      height: 62px;
+    
+      left: 55px;
+      top: 93px;
+    
+      border-width: 16px;
+    
+      border-color: #ffd45b;
+    }
+    
+    
+    /* =========================================================
+       STAR
+    ========================================================= */
+    
+    .art-star {
+      position: absolute;
+    
+      right: 25px;
+      bottom: 30px;
+    
+      z-index: 12;
+    
+      color: #ffd45b;
+    
+      font-size: 55px;
+    
+      transform: rotate(10deg);
+    
+      text-shadow:
+        0 4px 0 rgba(24, 52, 91, 0.08);
+    }
+    
+    
+    /* =========================================================
+       DECORATIVE DOTS
+    ========================================================= */
+    
+    .art-dot {
+      position: absolute;
+    
+      width: 8px;
+      height: 8px;
+    
+      border-radius: 50%;
+    
+      background: #2589d8;
+    
+      z-index: 8;
+    }
+    
+    .art-dot-1 {
+      right: 250px;
+      top: 45px;
+    }
+    
+    .art-dot-2 {
+      right: 90px;
+      top: 270px;
+    
+      width: 5px;
+      height: 5px;
+    }
+    
+    .art-dot-3 {
+      left: 15px;
+      top: 330px;
+    
+      width: 6px;
+      height: 6px;
+    }
+    
+    
+    /* =========================================================
+       BOTTOM
+    ========================================================= */
+    
+    .contact-bottom-decoration {
+      position: relative;
+    
+      z-index: 5;
+    
+      margin: 35px auto 0;
+    
+      display: flex;
+    
+      align-items: center;
+    
+      justify-content: center;
+    
+      gap: 12px;
+    }
+    
+    .contact-bottom-decoration span {
+      width: 45px;
+      height: 2px;
+    
+      background: #cdeaf7;
+    
+      border-radius: 10px;
+    }
+    
+    .contact-bottom-decoration svg {
+      color: #2589d8;
+    }
+    
+    
+    /* =========================================================
+       LARGE LAPTOP
+    ========================================================= */
+    
+    @media (max-width: 1250px) {
+    
+      .contact-page {
+        padding-left: 4%;
+        padding-right: 4%;
+      }
+    
+      .contact-wrapper {
+        grid-template-columns:
+          minmax(240px, 0.7fr)
+          minmax(480px, 1.3fr)
+          minmax(300px, 0.8fr);
+    
+        gap: 30px;
+      }
+    
+      .contact-form-card {
+        padding: 35px;
+      }
+    
+      .contact-art {
+        transform: scale(0.9);
+    
+        transform-origin: center right;
+      }
+    
+    }
+    
+    
+    /* =========================================================
+       TABLET
+    ========================================================= */
+    
+    @media (max-width: 1000px) {
+    
+      .contact-page {
+        padding-top: 60px;
+      }
+    
+      .contact-wrapper {
+        grid-template-columns: 0.8fr 1.2fr;
+    
+        gap: 40px;
+      }
+    
+      .contact-art {
+        display: none;
+      }
+    
+      .contact-title h1 {
+        font-size: 70px;
+      }
+    
+    }
+    
+    
+    /* =========================================================
+       MOBILE
+    ========================================================= */
+    
+    @media (max-width: 700px) {
+    
+      .contact-page {
+        padding: 45px 20px 55px;
+    
+        min-height: auto;
+      }
+    
+      .contact-wrapper {
+        display: flex;
+    
+        flex-direction: column;
+    
+        align-items: stretch;
+    
+        gap: 35px;
+      }
+    
+    
+      /* Left */
+    
+      .contact-left {
+        text-align: center;
+      }
+    
+      .contact-title h1 {
+        font-size: 60px;
+    
+        letter-spacing: -3px;
+      }
+    
+      .title-lines {
+        right: -48px;
+    
+        transform: scale(0.8) rotate(-12deg);
+      }
+    
+      .contact-intro {
+        font-size: 15px;
+    
+        margin-top: 20px;
+    
+        margin-bottom: 30px;
+      }
+    
+      .contact-info-list {
+        width: fit-content;
+    
+        margin: 0 auto;
+    
+        text-align: left;
+    
+        gap: 18px;
+      }
+    
+      .contact-info-item {
+        gap: 12px;
+      }
+    
+      .contact-icon {
+        width: 43px;
+        height: 43px;
+    
+        flex-basis: 43px;
+      }
+    
+    
+      /* Form */
+    
+      .contact-form-card {
+        padding: 28px 20px;
+    
+        border-radius: 22px;
+      }
+    
+      .form-top h2 {
+        font-size: 23px;
+      }
+    
+      .form-two-columns {
+        grid-template-columns: 1fr;
+    
+        gap: 0;
+      }
+    
+      .form-field {
+        margin-bottom: 17px;
+      }
+    
+    
+      /* Background */
+    
+      .contact-shape-left {
+        width: 320px;
+        height: 320px;
+    
+        left: -220px;
+        bottom: -200px;
+      }
+    
+      .contact-shape-right {
+        width: 300px;
+        height: 330px;
+    
+        right: -220px;
+        top: 70px;
+      }
+    
+      .contact-spark {
+        font-size: 25px;
+      }
+    
+      .spark-1 {
+        top: 95px;
+      }
+    
+      .spark-2 {
+        display: none;
+      }
+    
+    }

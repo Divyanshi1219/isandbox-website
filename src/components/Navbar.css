@@ -1,0 +1,314 @@
+/* ================================
+   SITE HEADER
+================================ */
+
+.site-header {
+  width: 100%;
+  background: #ffffff;
+}
+
+
+/* ================================
+   ANNOUNCEMENT BAR
+================================ */
+
+.announcement-bar {
+  width: 100%;
+  height: 38px;
+
+  background: #A61678;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.announcement-bar p {
+  margin: 0;
+
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+
+/* ================================
+   NAVBAR
+================================ */
+
+.navbar {
+  width: 100%;
+  height: 82px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 5%;
+
+  background: #fadfdf;
+}
+
+
+/* ================================
+   LOGO
+================================ */
+
+.navbar-logo {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo a {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  width: 150px;
+  height: auto;
+
+  display: block;
+}
+
+
+/* ================================
+   DESKTOP MENU
+================================ */
+
+.navbar-menu {
+  flex: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 38px;
+}
+
+.navbar-menu a {
+  position: relative;
+
+  text-decoration: none;
+
+  color: #29232d;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  transition: color 0.25s ease;
+}
+
+.navbar-menu a:hover {
+  color: #9b70ad;
+}
+
+
+/* ================================
+   MOBILE MENU BUTTON
+   HIDDEN ON DESKTOP
+================================ */
+
+.mobile-menu-button {
+  display: none !important;
+
+  border: none;
+  background: transparent;
+
+  padding: 4px;
+
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  color: #29232d;
+}
+
+
+/* ================================
+   MOBILE DROPDOWN
+   HIDDEN ON DESKTOP
+================================ */
+
+.mobile-menu {
+  display: none;
+}
+
+
+/* ================================
+   RIGHT ACTIONS
+================================ */
+
+.navbar-actions {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 18px;
+}
+
+.nav-icon {
+  border: none;
+  background: transparent;
+
+  padding: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  color: #29232d;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.nav-icon:hover {
+  color: #9b70ad;
+  transform: translateY(-1px);
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+  .navbar {
+    padding: 0 3%;
+  }
+
+  .navbar-menu {
+    gap: 20px;
+  }
+
+  .navbar-menu a {
+    font-size: 13px;
+  }
+
+  .navbar-logo img {
+    width: 100px;
+  }
+
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 700px) {
+
+  .navbar {
+    height: 70px;
+
+    padding: 0 20px;
+  }
+
+
+  /* -------------------------------
+     Hide Desktop Menu
+  -------------------------------- */
+
+  .navbar-menu {
+    display: none;
+  }
+
+
+  /* -------------------------------
+     Logo
+  -------------------------------- */
+
+  .navbar-logo img {
+    width: 95px;
+  }
+
+
+  /* -------------------------------
+     Right Actions
+  -------------------------------- */
+
+  .navbar-actions {
+    justify-content: flex-end;
+    gap: 14px;
+  }
+
+
+  /* -------------------------------
+     Show Hamburger
+  -------------------------------- */
+
+  .mobile-menu-button {
+    display: flex !important;
+  }
+
+
+  /* -------------------------------
+     Mobile Dropdown
+  -------------------------------- */
+
+  .mobile-menu {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 0;
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    transition:
+      max-height 0.35s ease,
+      padding 0.35s ease;
+  }
+
+
+  /* Open State */
+
+  .mobile-menu-open {
+    max-height: 400px;
+
+    padding: 15px 0 25px;
+  }
+
+
+  /* Mobile Links */
+
+  .mobile-menu a {
+    width: 100%;
+
+    padding: 13px 20px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    color: #29232d;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: color 0.2s ease;
+  }
+
+  .mobile-menu a:hover {
+    color: #9b70ad;
+  }
+
+}

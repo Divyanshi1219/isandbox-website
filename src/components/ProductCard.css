@@ -1,0 +1,231 @@
+/* ================================
+   PRODUCT CARD
+================================ */
+
+.product-card {
+      width: 100%;
+      min-width: 0;
+    
+      background: #ffffff;
+    
+      overflow: hidden;
+    
+      transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+    }
+    
+    
+    /* ================================
+       IMAGE
+    ================================ */
+    
+    .product-image-wrapper {
+      position: relative;
+    
+      width: 100%;
+      aspect-ratio: 1 / 1;
+    
+      overflow: hidden;
+    
+      background: #f7f7f7;
+    }
+    
+    .product-image {
+      width: 100%;
+      height: 100%;
+    
+      display: block;
+    
+      object-fit: cover;
+    
+      transition: transform 0.5s ease;
+    }
+    
+    .product-card:hover .product-image {
+      transform: scale(1.04);
+    }
+    
+    
+    /* ================================
+       VIEW PRODUCT HOVER
+    ================================ */
+    
+    .product-view {
+      position: absolute;
+    
+      left: 50%;
+      bottom: 18px;
+    
+      transform: translate(-50%, 15px);
+    
+      padding: 10px 22px;
+    
+      background: #ffffff;
+      color: #29232d;
+    
+      text-decoration: none;
+    
+      font-size: 12px;
+      font-weight: 600;
+    
+      opacity: 0;
+    
+      transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+    
+      white-space: nowrap;
+    }
+    
+    .product-card:hover .product-view {
+      opacity: 1;
+    
+      transform: translate(-50%, 0);
+    }
+    
+    
+    /* ================================
+       PRODUCT INFORMATION
+    ================================ */
+    
+    .product-info {
+      padding: 17px 2px 0;
+    }
+    
+    .product-name {
+      margin: 0;
+    
+      font-size: 16px;
+      font-weight: 550;
+    
+      color: #29232d;
+    }
+    
+    .product-description {
+      margin: 7px 0 10px;
+    
+      font-size: 12px;
+      line-height: 1.5;
+    
+      color: #77717a;
+    
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    
+      overflow: hidden;
+    }
+    
+    
+    /* ================================
+       RATING
+    ================================ */
+    
+    .product-rating {
+      display: flex;
+      align-items: center;
+    
+      gap: 7px;
+    
+      margin-bottom: 9px;
+    }
+    
+    .stars {
+      display: flex;
+      align-items: center;
+    
+      gap: 2px;
+    
+      color: #fbca08;
+    }
+    
+    .rating-number {
+      font-size: 11px;
+    
+      color: #77717a;
+    }
+    
+    
+    /* ================================
+       PRICE
+    ================================ */
+    
+    .product-price {
+      margin: 0 0 13px;
+    
+      font-size: 20px;
+      font-weight: 550;
+    
+      color: #29232d;
+    }
+    
+    
+    /* ================================
+       ADD TO CART
+    ================================ */
+    
+    .add-to-cart {
+      width: 100%;
+    
+      height: 42px;
+    
+      border: none;
+    
+      background: #1694CF;
+      color: #ffffff;
+    
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+      gap: 8px;
+    
+      cursor: pointer;
+    
+      font-size: 12px;
+      font-weight: 600;
+    
+      transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+    }
+    
+    .add-to-cart:hover {
+      background: #A61678;
+    }
+    
+    
+    /* ================================
+       MOBILE
+    ================================ */
+    
+    @media (max-width: 600px) {
+    
+      .product-info {
+        padding-top: 13px;
+      }
+    
+      .product-name {
+        font-size: 14px;
+      }
+    
+      .product-description {
+        font-size: 11px;
+      }
+    
+      .product-price {
+        font-size: 14px;
+      }
+    
+      .add-to-cart {
+        height: 38px;
+        font-size: 11px;
+      }
+    
+      /* Keep product action accessible on touch devices */
+      .product-view {
+        display: none;
+      }
+    
+    }

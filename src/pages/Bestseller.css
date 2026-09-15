@@ -1,0 +1,157 @@
+/* ================================
+   BESTSELLER PAGE
+================================ */
+
+.bestseller-page {
+  width: 100%;
+  background: #ffffff;
+}
+
+
+/* ================================
+   BANNER
+================================ */
+
+.bestseller-banner {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.bestseller-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+
+/* ================================
+   PRODUCTS SECTION
+================================ */
+
+.bestseller-products {
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  padding: 70px 5% 100px;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.bestseller-header {
+  margin-bottom: 55px;
+}
+
+.bestseller-label {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #ed4f7d;
+}
+
+.bestseller-header h1 {
+  margin: 0;
+
+  font-size: 48px;
+  line-height: 1.1;
+  text-align: center;
+  font-weight: 700;
+
+  color: #243f7d;
+}
+
+.bestseller-header h1 em {
+  color: #ed4f7d;
+  font-style: normal;
+}
+
+.bestseller-header p {
+  margin: 18px 0 0;
+  text-align: center;
+ 
+
+  font-size: 16px;
+  line-height: 1.6;
+
+  color: #65708a;
+}
+
+
+/* ================================
+   PRODUCT GRID
+================================ */
+
+.bestseller-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 28px;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 1000px) {
+
+  .bestseller-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 700px) {
+
+  .bestseller-products {
+    width: 90%;
+    
+    padding: 55px 0 65px;
+  }
+
+  .bestseller-header h1 {
+    font-size: 34px;
+  }
+
+  .bestseller-header p {
+    font-size: 14px;
+  }
+
+  .bestseller-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+}
+
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 450px) {
+
+  .bestseller-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

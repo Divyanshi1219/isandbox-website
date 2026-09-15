@@ -1,0 +1,46 @@
+/* ================================
+   HERO BANNER
+================================ */
+
+.hero-banner {
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+    }
+    
+    .hero-banner-image {
+      width: 100%;
+      height: auto;
+    
+      display: block;
+    
+      object-fit: cover;
+    }
+    
+    
+    /* ================================
+       TABLET
+    ================================ */
+    
+    @media (max-width: 900px) {
+    
+      .hero-banner-image {
+        width: 100%;
+        height: auto;
+      }
+    
+    }
+    
+    
+    /* ================================
+       MOBILE
+    ================================ */
+    
+    @media (max-width: 600px) {
+    
+      .hero-banner-image {
+        width: 100%;
+        height: auto;
+      }
+    
+    }
