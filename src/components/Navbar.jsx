@@ -8,59 +8,6 @@ function Navbar() {
   return (
     <header className="site-header">
 
-     
-{/* Announcement Bar */}
-<div className="announcement-bar">
-
-  <div className="announcement-track">
-
-    {/* FIRST SET */}
-    <div className="announcement-set">
-
-      <div className="announcement-item">
-        Discover something new ✨ <span>|</span> Shop our latest collection
-      </div>
-
-      <div className="announcement-item">
-        Discover something new ✨ <span>|</span> Shop our latest collection
-      </div>
-
-      <div className="announcement-item">
-        Discover something new ✨ <span>|</span> Shop our latest collection
-      </div>
-
-      <div className="announcement-item">
-        Discover something new ✨ <span>|</span> Shop our latest collection
-      </div>
-
-    </div>
-
-
-    {/* SECOND IDENTICAL SET */}
-    <div className="announcement-set">
-
-      <div className="announcement-item">
-        Discover something new ✨ <span>|</span> Shop our latest collection
-      </div>
-
-      <div className="announcement-item">
-        Discover something new ✨ <span>|</span> Shop our latest collection
-      </div>
-
-      <div className="announcement-item">
-        Discover something new ✨ <span>|</span> Shop our latest collection
-      </div>
-
-      <div className="announcement-item">
-        Discover something new ✨ <span>|</span> Shop our latest collection
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-
       {/* Main Navigation */}
       <nav className="navbar">
 
