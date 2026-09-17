@@ -34,8 +34,7 @@
 .announcement-track {
   display: flex;
   width: max-content;
-
-  animation: announcement-marquee 15s linear infinite;
+  animation: announcement-marquee 20s linear infinite;
 }
 
 
